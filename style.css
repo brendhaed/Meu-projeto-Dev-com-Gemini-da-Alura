@@ -1,0 +1,155 @@
+body{
+    background-image: url('fundo.jpg');
+    background-size: cover;
+    font-family: "Space Grotesk", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 2rem;
+    color:white;
+    text-align: center;
+}
+p{
+    font-size: 1rem;
+    color:#000011;
+}
+h5{
+    color:white;
+    font-size: 1rem;
+    text-align: center;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+section input{
+    width: 30rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+
+}
+section input, button{
+    display: flex;
+    align-items: right;
+}
+section button{
+    cursor:pointer;
+    border-radius: 1.5rem;
+    background-color: cornflowerblue;
+    color:white;
+    padding: 0.8rem 1.2rem;
+}
+section button:hover{
+    background-color: darkgray;
+}
+
+.resultados-pesquisa {
+    width: 80rem;
+    height: 40vh;
+    overflow-y: auto; 
+    margin-top: 1rem; 
+    padding: 1rem; 
+    border-radius: 0.6rem; 
+}
+
+.item-resultado {
+    width: 50rem;
+    height: 40vh;
+    background: #FFFFFF; 
+    border-radius: 0.6rem; 
+    padding: 1rem; 
+    margin-bottom: 1rem; 
+}
+
+.item-resultado h2 {
+    font-size: 1.5rem; 
+    color: #222831;
+}
+
+.item-resultado a {
+    text-decoration: none; 
+    color:#222831; 
+}
+
+
+.item-resultado a:hover {
+    text-decoration: underline;
+}
+
+.descricao-meta {
+    color: #45474B;
+    margin: 0.5rem 0;
+}
+footer{
+    background-color: rgb(23, 136, 207);
+    color:white;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; 
+        letter-spacing: 0.1rem; 
+    }
+
+    section input {
+        width: 25rem; 
+        padding: 0.8rem;
+    }
+
+    .resultados-pesquisa {
+        width: 40rem;
+        height: 40vh; 
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem; 
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem; 
+        letter-spacing: 0.1rem; 
+    }
+
+    section input {
+        width: 17rem; 
+    }
+
+    section button {
+        padding: 0.6rem 1rem; 
+        font-size: 0.9rem; 
+    }
+
+    .resultados-pesquisa {
+        width: 90%; 
+        height: 50vh; 
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 0.9rem; 
+    }
+}
