@@ -1,5 +1,6 @@
+
 body{
-    background-image: url('fundo.jpg');
+    background-image: url('fundo1.jpg');
     background-size: cover;
     font-family: "Space Grotesk", sans-serif;
     display: flex;
@@ -46,7 +47,7 @@ section input, button{
 section button{
     cursor:pointer;
     border-radius: 1.5rem;
-    background-color: cornflowerblue;
+    background-color:  rgb(44, 46, 48);
     color:white;
     padding: 0.8rem 1.2rem;
 }
@@ -92,7 +93,7 @@ section button:hover{
     margin: 0.5rem 0;
 }
 footer{
-    background-color: rgb(23, 136, 207);
+    background-color: rgb(44, 46, 48);
     color:white;
     text-align: center;
     padding: 0;
@@ -101,6 +102,20 @@ footer{
     bottom: 0;
     font-size: 1rem;
 }
+footer p img{
+    margin-right: 1px; 
+    height: 25px;
+    width: 25px;
+}
+footer p a{
+text-decoration: none;
+color:white;
+}
+footer p {
+    font-size: 15px;
+    text-decoration: none;
+    color:white;
+    }
 
 @media (max-width: 768px) {
     h1 {
@@ -112,23 +127,53 @@ footer{
         width: 25rem; 
         padding: 0.8rem;
     }
-
+    .item-resultado{
+        width: 400px;
+        height: 620px;
+    }
     .resultados-pesquisa {
         width: 40rem;
-        height: 40vh; 
+        height: 80vh; 
     }
 
     .item-resultado h2 {
         font-size: 1.3rem; 
     }
+    footer{
+        width:100%;
+    }
 }
+@media (max-width: 820px) {
+    h1 {
+        font-size: 2rem; 
+        letter-spacing: 0.1rem; 
+    }
 
+    section input {
+        width: 25rem; 
+        padding: 0.8rem;
+    }
+    .item-resultado{
+        width: 500px;
+        height: 620px;
+    }
+    .resultados-pesquisa {
+        width: 40rem;
+        height: 80vh; 
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem; 
+    }
+    footer{
+        width:100%;
+    }
+}
 /* Responsividade para celulares */
 @media (max-width: 480px) {
 
     h1 {
-        font-size: 1.8rem; 
-        letter-spacing: 0.1rem; 
+        font-size: 1.5rem; 
     }
 
     section input {
@@ -142,14 +187,50 @@ footer{
 
     .resultados-pesquisa {
         width: 90%; 
-        height: 50vh; 
+        height: 80vh; 
     }
-
+    .item-resultado{
+        width: 280px;
+        height: 520px;
+    }
     .item-resultado h2 {
         font-size: 1.1rem;
     }
-
+   
     footer {
+        width:100%;
+        font-size: 0.9rem; 
+    }
+}
+@media (max-width: 412px) {
+
+    h1 {
+        font-size: 1.2rem; 
+    }
+
+    section input {
+        width: 17rem; 
+    }
+
+    section button {
+        padding: 0.6rem 1rem; 
+        font-size: 0.9rem; 
+    }
+
+    .resultados-pesquisa {
+        width: 90%; 
+        height: 100vh; 
+    }
+    .item-resultado{
+        width: 250px;
+        height: 620px;
+    }
+    .item-resultado h2 {
+        font-size: 1.1rem;
+    }
+   
+    footer {
+        width:100%;
         font-size: 0.9rem; 
     }
 }
